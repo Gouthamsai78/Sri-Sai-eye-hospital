@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gouthamsai78.github.io/Sri-Sai-eye-hospital/sitemap.xml
