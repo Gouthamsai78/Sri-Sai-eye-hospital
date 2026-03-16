@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sri Sai Eye Hospital & Opticals | Shadnagar, Telangana</title>
+    <meta name="description" content="Best eye hospital in Shadnagar. Expert cataract surgery, eye exams, Ray-Ban & branded opticals. Open every day 9AM–8:30PM. Call +91 97045 84244">
+    <meta name="keywords" content="eye hospital shadnagar, opticals shadnagar, ray-ban shadnagar, cataract surgery shadnagar, eye doctor farooqnagar, glasses shadnagar, eye checkup rangareddy">
+    
+    <!-- Open Graph for WhatsApp/Social Media -->
+    <meta property="og:title" content="Sri Sai Eye Hospital & Opticals | Shadnagar">
+    <meta property="og:description" content="Expert Eye Care & Premium Eyewear. Open 7 Days.">
+    <meta property="og:image" content="https://i.ibb.co/Xxqtqtkn/unnamed-8.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+Telugu:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --primary: #0d2240;
+            --secondary: #1a4480;
+            --accent: #c8962a;
+            --light-gold: #f0c057;
+            --bg-white: #ffffff;
+            --card-bg: #f4f8ff;
+            --text-main: #1a1a1a;
+            --text-muted: #667280;
+            --radius-lg: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 8px 32px rgba(13, 34, 64, 0.10);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline-color: var(--accent);
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .brand-logo {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .telugu-text {
+            font-family: 'Noto Sans Telugu', sans-serif;
+        }
+
+        /* --- UTILITIES --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background: var(--light-gold);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(200, 150, 42, 0.3);
+        }
+
+        .btn-navy {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-navy:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .text-center { text-align: center; }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- TOP BAR --- */
+        .top-bar {
+            background: var(--primary);
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            background: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-box {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: var(--primary);
+        }
+
+        .logo-main {
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .logo-sub {
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+            font-size: 15px;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        /* --- HERO --- */
+        .hero {
+            height: 85vh;
+            min-height: 600px;
+            background: linear-gradient(135deg, rgba(13,34,64,0.92), rgba(26,68,128,0.70)), url('https://i.ibb.co/Xxqtqtkn/unnamed-8.jpg');
+            background-size: cover;
+            background-position: center top;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero-badge {
+            background: rgba(255,255,255,0.1);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .hero .telugu-line {
+            font-size: 1.5rem;
+            color: var(--light-gold);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .trust-strip {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* --- STATS TICKER --- */
+        .stats-ticker {
+            background: linear-gradient(90deg, var(--accent), var(--light-gold));
+            padding: 25px 0;
+            color: var(--primary);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 700;
+        }
+
+        .stat-item i { margin-bottom: 8px; }
+        .stat-number { font-size: 24px; }
+
+        /* --- SERVICES --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(13,34,64,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+            background: white;
+        }
+
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 25px;
+            flex-grow: 1;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+
+        /* --- OPTICALS SECTION --- */
+        .opticals-section {
+            background: #fff;
+        }
+
+        .opticals-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .opticals-images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .opticals-images img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+        }
+
+        .feature-rows {
+            margin: 30px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .feature-row {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .feature-row i {
+            color: var(--accent);
+            padding-top: 4px;
+        }
+
+        /* --- LENS TECH --- */
+        .lens-tech {
+            background: var(--primary);
+            color: white;
+            padding: 60px 0;
+        }
+
+        .lens-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .lens-card {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+
+        .lens-card i {
+            font-size: 32px;
+            color: var(--light-gold);
+            margin-bottom: 15px;
+        }
+
+        /* --- BRANDS --- */
+        .brands-marquee {
+            overflow: hidden;
+            padding: 40px 0;
+            background: #f9f9f9;
+        }
+
+        .brands-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .brand-badge {
+            background: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            color: var(--primary);
+        }
+
+        /* --- MASONRY GALLERY --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 12px;
+            height: 250px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item.wide { grid-column: span 2; }
+
+        /* --- APPOINTMENT FORM --- */
+        .appointment-section {
+            background: #fafafa url('https://www.transparenttextures.com/patterns/cubes.png');
+        }
+
+        .form-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group.full { grid-column: span 2; }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        input:focus { border-color: var(--accent); }
+
+        .error { border-color: #ff4d4d !important; animation: shake 0.4s; }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.8);
+            padding: 80px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1.5fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-logo .logo-main { color: white; }
+        .footer-logo .logo-sub { color: var(--light-gold); }
+
+        .footer-links h4 { color: white; margin-bottom: 20px; }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 10px; }
+        .footer-links a { color: inherit; text-decoration: none; transition: var(--transition); }
+        .footer-links a:hover { color: var(--light-gold); }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* --- FLOATING ELEMENTS --- */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 9999;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        .call-btn-mobile {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: var(--primary);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: none;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 9999;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        .open-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .is-open { background: #e6fffa; color: #2c7a7b; }
+        .is-closed { background: #fff5f5; color: #c53030; }
+
+        /* --- MOBILE RESPONSIVE --- */
+        @media (max-width: 992px) {
+            .nav-links { display: none; }
+            .menu-toggle { display: block; }
+            .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+            .opticals-layout { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero { text-align: center; }
+            .hero-btns { justify-content: center; }
+            .trust-strip { justify-content: center; }
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .form-grid { grid-template-columns: 1fr; }
+            .section-padding { padding: 50px 0; }
+            .call-btn-mobile { display: flex; }
+            .top-bar .container { justify-content: center; }
+            .top-bar .time { display: none; }
+        }
+
+        /* --- MOBILE MENU --- */
+        .mobile-menu {
+            position: fixed;
+            top: 72px;
+            left: 0;
+            width: 100%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            display: none;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .mobile-menu.active { display: flex; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <a href="tel:+919704584244"><i data-lucide="phone" size="16"></i> +91 97045 84244</a>
+            <span class="time"><i data-lucide="clock" size="16"></i> Open 7 Days: 9:00 AM – 8:30 PM</span>
+        </div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <a href="#" class="logo-box">
+                <span class="logo-main">Sri Sai Eye Hospital</span>
+                <span class="logo-sub">& Sri Sai Opticals</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#opticals">Opticals</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+                <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#opticals">Opticals</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content reveal">
+                <div class="hero-badge">
+                    <i data-lucide="star" fill="currentColor"></i> 3.7 Stars on Google • 18 Reviews
+                </div>
+                <h1>Expert Eye Care in Shadnagar</h1>
+                <div class="telugu-line telugu-text">మీ కళ్ళ ఆరోగ్యమే మా లక్ష్యం</div>
+                <p>Advanced Eye Surgery • Premium Optical Showroom • Open Every Day. Trust our experts for precise diagnostics and premium branded eyewear.</p>
+                
+                <div class="hero-btns">
+                    <a href="tel:+919704584244" class="btn btn-primary">Call: +91 97045 84244</a>
+                    <a href="https://wa.me/919704584244?text=Hello%20Sri%20Sai%20Eye%20Hospital%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-navy">
+       
